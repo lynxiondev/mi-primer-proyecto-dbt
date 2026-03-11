@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: stg_usuarios_limpios
+    description: "Tabla de usuarios con datos básicos limpios"
+    columns:
+      - name: id_usuario
+        description: "Clave primaria del usuario"
+        data_tests:
+          - unique
+          - not_null
+  
+  - name: usuarios_con_pedidos
+    description: "usuarios que han realizado pedidos"
+    columns: 
+      - name: id_usuario
+        data_tests:
+          - unique
+          - not_null
+      - name: total_gastado
+        description: "Monto total acumulado por el usuario"
+        data_tests:
+          - not_null    
