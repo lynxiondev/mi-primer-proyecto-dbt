@@ -1,15 +1,12 @@
-Welcome to your new dbt project!
+Mi Primer Proyecto de Modern Data Stack
 
-### Using the starter project
+Este proyecto utiliza dbt y BigQuery para transformar datos crudos de una tienda en modelos analíticos limpios.
+🔍 Conceptos Aplicados:
 
-Try running the following commands:
-- dbt run
-- dbt test
+    Sources: Definición de fuentes de datos crudas en YAML.
 
+    Staging: Limpieza y tipado de datos.
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+    Tests: Validación de unicidad y valores no nulos.
+
+    Lineage: Documentación automática del flujo de datos.
