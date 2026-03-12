@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fct_usuarios_pedidos
+    description: "Tabla final que resume las ventas por cada usuario. Ideal para tableros de Marketing."
+    columns:
+      - name: id_usuario
+        description: "Clave única del usuario."
+        tests:
+          - unique
+          - not_null
+      - name: nombre_limpio
+        description: "Nombre del usuario formateado."
+      - name: total_gastado
+        description: "Suma total de dinero que el usuario gastó en la tienda."
+      - name: total_pedidos
+        description: "Cantidad total de órdenes realizadas por el usuario."
