@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bq_tienda
+    database: mi-primer-laboratorio-data
+    schema: laboratorio_lynxion 
+    tables:
+      - name: usuarios_raw
+      - name: pedidos_raw 
