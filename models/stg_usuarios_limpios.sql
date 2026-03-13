@@ -11,5 +11,6 @@ SELECT
     -- Ponemos el nombre en mayúsculas (Limpieza de datos!)
     UPPER(nombre) as nombre_limpio,
     -- Nos aseguramos de que la fecha sea tipo DATE
-    CAST(fecha_registro AS DATE) as fecha_formateada
+    CAST(fecha_registro AS DATE) as fecha_formateada,
+    {{ obtener_fecha_carga() }} as cargado_at 
 FROM {{ source('bq_tienda', 'usuarios_raw') }} 
